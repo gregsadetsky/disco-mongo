@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "services": {
+        "mongo": {
+            "image": "mongo:8.0.9",
+            "port": "27017",
+            "exposedInternally": true,
+            "volumes": [
+                {
+                    "name": "data",
+                    "destinationPath": "/data/db"
+                }
+            ]
+        }
+    }
+}
